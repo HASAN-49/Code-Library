@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const int N = 1e5 + 9;
+const int N = 2e5 + 9;
 int a[N];
 long long t[4 * N];
 
@@ -52,11 +52,11 @@ void solve() {
   for (int i = 0; i < m; i++) {
     int id; cin >> id;
     if (id == 1) {
-      int idx, val; cin >> idx >> val; idx++;
+      int idx, val; cin >> idx >> val;
       upd(1, 1, n, idx, val);
     }
     else {
-      int l, r; cin >> l >> r; l++;
+      int l, r; cin >> l >> r;
       cout << query(1, 1, n, l, r) << '\n';
     }
   }
@@ -76,3 +76,4 @@ int main() {
 
   return 0;
 }
+// https://cses.fi/problemset/task/1648
